@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling>=1.18"]
+build-backend = "hatchling.build"
+
+[project]
+name = "elementary-mcp-client"
+version = "0.1.0"
+description = "Token-injecting wrapper for Elementary MCP over stdio"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["keyring>=24"]
+
+[project.scripts]
+elementary-mcp-client = "elementary_mcp_client.__main__:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["elementary_mcp_client"]
