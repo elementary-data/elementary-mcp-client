@@ -7,7 +7,7 @@ except ImportError:
 
 SERVICE = "elementary-mcp"
 ACCOUNT = "token"
-DEFAULT_URL = "http://localhost:8081/mcp/"
+DEFAULT_URL = "https://prod.api.elementary-data.com/mcp/"
 
 
 def get_token():
