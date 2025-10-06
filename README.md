@@ -6,3 +6,13 @@ A lightweight CLI wrapper that lets Cursor, VS Code, and other MCP-compatible ed
 ```bash
 pip install elementary-mcp-client
 elementary-mcp-client login  # paste your token once
+```
+
+## MCP connection
+Add this to your mcp configurations
+```bash
+"Elementary": {
+        "command": "elementary-mcp-client",
+        "transport": "stdio"
+    }
+```
